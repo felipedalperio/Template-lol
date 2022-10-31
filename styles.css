@@ -419,7 +419,7 @@ i{
     width: 50px;
 }
 
-.estamp.actived{
+.estamp.active{
     fill:#d69a3b;
 }
 
@@ -452,6 +452,18 @@ i{
     z-index: 9;
 }
 
+.indicator {
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+.bolinha.active ~ .indicator{
+    display: flex;
+}
+
 .lineup {
     position: absolute;
     height: 14px;
@@ -460,7 +472,7 @@ i{
     background-color: #fbba51;;
 }
 
-.circleActived{
+.circleIndicator{
     position: absolute;
     top:86px;
     border-radius: 50%;
